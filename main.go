@@ -1,7 +1,12 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"time"
+)
 
 func main() {
-	fmt.Println("Starting...")
+	fmt.Println("service started")
+	time.Sleep(time.Second * 5)
+	fmt.Println("service stopped")
 }
