@@ -1,12 +1,13 @@
 pipeline {
-    agent any
+    agent {
+        dockerfile true
+    }
 
     stages {
         stage('Build Golang API Service Image') {
             steps {
                 echo 'Building...'
-                sh 'go version'
-                // sh 'docker build -t test-image .'
+                sh 'docker build -t test-image .'
             }
         }
     }
