@@ -4,7 +4,7 @@ pipeline {
     }
 
     stages {
-        stage('Build Service Image') {
+        stage('Build Golang API Service Image') {
             steps {
                 echo 'Building...'
                 sh 'go version'
